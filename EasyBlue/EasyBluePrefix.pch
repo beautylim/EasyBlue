@@ -1,0 +1,102 @@
+//
+//  EasyBluePrefix.pch
+//  EasyBlue
+//
+//  Created by 李敏 on 16/3/10.
+//  Copyright © 2016年 limin. All rights reserved.
+//
+
+#ifndef EasyBluePrefix_pch
+#import "Common.h"
+#import "Masonry.h"
+#import "InitilLocalData.h"
+#import "UIImageView+WebCache.h"
+//#import <SDWebImage/UIButton+WebCache.h>
+#import "IQKeyboardManager.h"
+#define SCREEN_Width [UIScreen mainScreen].bounds.size.width
+#define SCREEN_Height [UIScreen mainScreen].bounds.size.height
+#define LOGIN_TITLE  @"登录"
+#define TABBAR_ITEM1_TITLE @"家庭成员"
+#define TABBAR_ITEM2_TITLE @"个人中心"
+#define USERDEFAULT_LOGIN_ID @"userId"
+#define APPKEY  @"56dfbdbde0f55a6296000019"
+#define QQ_APPID @"1105172013"
+#define QQ_APPKEY @"CLt3tr3wXcWq9hby"
+#define UMTHIRD_URL @"http://www.baidu.com"
+#define USER_NAME @"userName"
+#define USER_URL @"userURL"
+#define USER_TOKEN @"userToken"
+#define PLACE_HOLDER_IMAGE [UIImage imageNamed:@"place_holder"]
+#define MEMBER_TITLE_ARRAY [NSArray arrayWithObjects:@"称呼",@"性别",@"出生年月",@"现居住地",@"手机", nil]
+#define PERSON_TITLE_ARRAY [NSArray arrayWithObjects:@"姓名",@"性别",@"出生年月",@"现居住地",@"健康数据", nil]
+#define MEMBER_GENDER_ARRAY [NSArray arrayWithObjects:@"女",@"男",nil]
+#define ANIMATION_CUSTOM_PICKVIEW_DURATION 0.5
+#define DATEPICKERVIEW_FORMATER @"yyyy年MM月dd日"
+#define YEAR_SECONDS 31536000
+#define DEFAULT_VALUE -1
+#define GREEN_COLOR [UIColor colorWithRed:71/180.0 green:133/180.0 blue:40/180.0 alpha:1.0]
+#define UUID_CHARACTERISTIC_DEVICE_NAME  [CBUUID UUIDWithString:@"FF02"]
+#define UUID_CHARACTERISTIC_NOTIFICATION  [CBUUID UUIDWithString:@"FF03"]
+#define UUID_CHARACTERISTIC_USER_INFO  [CBUUID UUIDWithString:@"FF04"]
+#define UUID_CHARACTERISTIC_CONTROL_POINT  [CBUUID UUIDWithString:@"FF05"]
+#define UUID_CHARACTERISTIC_REALTIME_STEPS  [CBUUID UUIDWithString:@"FF06"]
+#define UUID_CHARACTERISTIC_ACTIVITY_DATA  [CBUUID UUIDWithString:@"FF07"]
+#define UUID_CHARACTERISTIC_FIRMWARE_DATA  [CBUUID UUIDWithString:@"FF08"]
+#define UUID_CHARACTERISTIC_LE_PARAMS  [CBUUID UUIDWithString:@"FF09"]
+#define UUID_CHARACTERISTIC_DATE_TIME  [CBUUID UUIDWithString:@"FF0A"]
+#define UUID_CHARACTERISTIC_STATISTICS  [CBUUID UUIDWithString:@"FF0B"]
+#define UUID_CHARACTERISTIC_BATTERY  [CBUUID UUIDWithString:@"FF0C"]
+#define UUID_CHARACTERISTIC_TEST  [CBUUID UUIDWithString:@"FF0D"]
+#define UUID_CHARACTERISTIC_REALTIME_STEPS  [CBUUID UUIDWithString:@"FF06"]
+#define UUID_CHARACTERISTIC_ACTIVITY_DATA  [CBUUID UUIDWithString:@"FF07"]
+#define UUID_CHARACTERISTIC_FIRMWARE_DATA  [CBUUID UUIDWithString:@"FF08"]
+#define UUID_CHARACTERISTIC_LE_PARAMS  [CBUUID UUIDWithString:@"FF09"]
+
+//家庭成员信息画面类型
+typedef NS_ENUM(NSInteger,InfoType){
+    InfoTypeAddMEmber = 0,
+    InfoTypeDetail
+};
+
+//自定义单行的pickerView
+typedef NS_ENUM(NSInteger,CustomPickerViewType){
+    CustomPickerViewTypeGender = 0,
+    CustomPickerViewTypeProvince
+};
+
+//标题row
+typedef NS_ENUM(NSInteger, TitleType){
+    TitleTypeName = 0,
+    TitleTypeGender,
+    TitleTypeBornDate,
+    TitleTypeCurrentAddress,
+    TitleTypeTel,
+    TitleTypeHelthData
+};
+
+//名称VC的类型
+typedef NS_ENUM(NSInteger, NameVCType){
+    NameVCTypeNAme = 0,
+    NameVCTypeTel,
+    NameVCTypeNickName
+};
+
+//RegisterCode调用方
+typedef NS_ENUM(NSInteger,RegisterCode)
+{
+    RegisterCodeRegister = 0,
+    RegisterCodeBinding,
+    RegisterCodeFindPassword
+};
+
+typedef NS_ENUM(NSInteger,FindPasswordType){
+    FindPasswordTypeFinding = 0,
+    FindPasswordTypeChangePass,
+    FindPasswordTypeChangeTel
+};
+#define EasyBluePrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* EasyBluePrefix_pch */

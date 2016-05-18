@@ -1,0 +1,29 @@
+PODS:
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - IQKeyboardManager (4.0.0)
+  - Masonry (0.6.4)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - UMengAnalytics (3.6.6)
+  - UMengSocial (5.0)
+
+DEPENDENCIES:
+  - FMDB
+  - IQKeyboardManager
+  - Masonry
+  - SDWebImage
+  - UMengAnalytics
+  - UMengSocial (~> 5.0)
+
+SPEC CHECKSUMS:
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  IQKeyboardManager: b91928f7927ba55a5829b4dcf4b7a6736ac9fc22
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  UMengAnalytics: 4bf831415146b9c57cb10be65fbd43462ef8cf65
+  UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
+
+COCOAPODS: 0.39.0
